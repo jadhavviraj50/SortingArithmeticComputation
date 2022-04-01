@@ -8,3 +8,7 @@ read b
 
 echo "Enter Third Input"
 read c
+
+Compute=$(($a + $b * $c))
+
+echo "The addition is $Compute"
