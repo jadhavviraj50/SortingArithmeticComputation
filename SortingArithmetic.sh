@@ -9,12 +9,14 @@ read b
 echo "Enter Third Input"
 read c
 
-Compute1=$(($a + $b * $c))
-Compute2=$(($a * $b + $c))
-Compute3=$(($c + $a / $b))
-Compute4=$(($a % $b + $c))
+declare -A AP
+AP[Compute1]=$(($a + $b * $c))
+AP[Compute2]=$(($a * $b + $c))
+AP[Compute3]=$(($c + $a / $b))
+AP[Compute4]=$(($a % $b + $c))
 
-echo "The Compute 1 is $Compute1"
-echo "The Compute 2 is $Compute2"
-echo "The Compute 3 is $Compute3"
-echo "The Compute 4 is $Compute4"
+echo "The Arithmetic Computation 1 is" ${AP[Compute1]}
+echo "The Arithmetic Computation 2 is" ${AP[Compute2]}
+echo "The Arithmetic Computation 3 is" ${AP[Compute3]}
+echo "The Arithmetic Computation 4 is" ${AP[Compute4]}
+
