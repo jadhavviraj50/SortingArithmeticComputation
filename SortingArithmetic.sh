@@ -9,6 +9,8 @@ read b
 echo "Enter Third Input"
 read c
 
-Compute=$(($a + $b * $c))
+Compute1=$(($a + $b * $c))
+Compute2=$(($a * $b + $c))
 
-echo "The addition is $Compute"
+echo "The Compute 1 is $Compute1"
+echo "The Compute 2 is $Compute2"
