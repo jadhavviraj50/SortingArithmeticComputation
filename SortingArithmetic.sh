@@ -20,3 +20,4 @@ echo "The Arithmetic Computation 2 is" ${AP[Compute2]}
 echo "The Arithmetic Computation 3 is" ${AP[Compute3]}
 echo "The Arithmetic Computation 4 is" ${AP[Compute4]}
 
+echo Result [${AP[Compute1]} ${AP[Compute2]} ${AP[Compute3]} ${AP[Compute4]}]
